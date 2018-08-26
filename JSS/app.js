@@ -1,5 +1,7 @@
 var mathString = '';
+var log = '';
 var first = false;
+
 
 function screen(string) {
     if (first = false) {
@@ -15,6 +17,7 @@ function screen(string) {
     document.getElementById('display').innerHTML = mathString;
 }
 
+
 function remove() {
     mathString = '';
     document.getElementById('display').innerHTML = '0.00';
@@ -25,9 +28,12 @@ function remove() {
 function calculate() {
     try {
         document.getElementById('display').innerHTML = eval(mathString);
+        log += mathString + ': ' + eval(mathString) +'<br>';
+        mathString = eval(mathString);
     }
     catch {
         document.getElementById('display').innerHTML = 'Math Error!';
     }
+    document.getElementById('log').innerHTML = log;
     return;
 }

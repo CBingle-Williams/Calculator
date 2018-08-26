@@ -1,1 +1,18 @@
+body {
+    font-family: 'Kosugi', sans-serif;
+    width:60%;
+    margin: auto;
+    font-size: 25px;
+}
 
+@media screen and (max-width: 992px) {
+    body {
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%; 
+    }
+}
