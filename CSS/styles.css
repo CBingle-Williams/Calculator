@@ -1,0 +1,16 @@
+body {
+    width:20%;
+}
+
+.darkGrey {
+    background-color: rgb(214,214,214);
+}
+
+.lightGrey {
+    background-color: rgb(224,224,224);
+}
+
+.orange {
+    background: rgb(234,151,72);
+}
+
