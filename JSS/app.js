@@ -15,18 +15,6 @@ function screen(string) {
     document.getElementById('display').innerHTML = mathString;
 }
 
-function negative () {
-    mathString = -Math.abs(parseFloat(mathString));
-    document.getElementById('display').innerHTML = mathString;
-    return;
-}
-
-function percentage () {
-    mathString = parseFloat(mathString)/100;
-    document.getElementById('display').innerHTML = mathString;
-    return;
-}
-
 function remove() {
     mathString = '';
     document.getElementById('display').innerHTML = '0.00';
