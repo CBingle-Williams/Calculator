@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Kosugi" rel="stylesheet">
-        <script src="JSS/app.js"></script>
+        <script src="JS/app.js"></script>
     </head>
     <body>
         <main>
             <div class="h1 text-center">Calculator</div>
             <div class="container-fluid">
                 <div class="row">
-                    <div id="display" class="col-12 bg-primary border border-white bg-secondary text-white">0.00</div>
+                    <div id="display" class="col-10 bg-primary border border-white bg-secondary text-white">0.00</div>
+                    <div onclick="backspace()" id="back" class="col-2 bg-warning border border-left-0 border-right border-white text-nowrap"><-</div>
                 </div>
                 <div class="row">
                     <div onclick="remove()" id="AC" class="col-3 bg-primary border border-top-0 border-right-0 border-white">AC</div>
@@ -48,8 +49,8 @@
                 </div>
             </div>
             <div class="bg-light">
-                <h2 class="mt-2">Log:</h2>
-                <div id="log"></div>
+                    <h2 class="mt-2">Log:</h2>
+                    <div id="log"></div>
             </div>
         </main>
         

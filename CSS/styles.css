@@ -5,6 +5,12 @@ body {
     font-size: 25px;
 }
 
+@media screen and (max-width: 1200px) {
+    body {
+        width: 70%; 
+    }
+}
+
 @media screen and (max-width: 992px) {
     body {
         width: 80%; 
